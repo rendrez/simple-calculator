@@ -1,19 +1,22 @@
 let semuaTombol = document.querySelectorAll("button");
+let display = document.getElementById("calculatorScreen");
 
 semuaTombol.forEach(function (tombol) {
   tombol.addEventListener("click", function () {
     if (tombol.value == "C") {
-      document.getElementById("calculatorScreen").value = 0;
+      // Tombol Clear
+      display.value = 0;
     } else {
-      if (document.getElementById("calculatorScreen").value == 0) {
-        document.getElementById("calculatorScreen").value = tombol.value;
+      if (display.value == 0) {
+        // Jika 0 di kalkulator maka saat menambahkan angka baru misal 1, tidak menjadi 01 tapi menjadi 1
+        display.value = tombol.value;
       } else {
         if (tombol.value == "=") {
-          document.getElementById("calculatorScreen").value = eval(
-            document.getElementById("calculatorScreen").value
-          );
+          // Tombol samadengan
+          display.value = eval(display.value);
         } else {
-          document.getElementById("calculatorScreen").value += tombol.value;
+          // Tombol lainnya
+          display.value += tombol.value;
         }
       }
     }

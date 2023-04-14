@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@ body {
 }
 
 .calculator {
-  background-color: aliceblue;
+  background-color: rgb(41, 44, 48);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,14 +24,15 @@ body {
 }
 
 #calculatorScreen {
-  width: 100%;
+  width: 98%;
   height: 50px;
   font-size: xx-large;
-  margin: 2px;
+  margin: 4px;
+  background-color: white;
 }
 
 .button {
-  background-color: coral;
+  /* background-color: coral; */
   display: flex;
   flex-wrap: wrap;
 }
