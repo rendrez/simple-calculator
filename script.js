@@ -37,4 +37,4 @@ semuaTombol.forEach(function (tombol) {
   });
 });
 
-// TODO: menambah input hapus
+// TODO: memperboleh input angka lewat keyboard
